@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+
+<body>
+    <div id="navigation-bar">
+        <a id="page-1" href="page-1.html" target="_blank">What Is Black Clover?</a>
+        <a id="page-2" href="page-2.html" target="_blank">Survey</a>
+        <a id="page-3" href="page-3.html" target="_blank">Favorite Characters</a>
+        <a id="page-4" href="page-4.html" target="_blank">Cool Pictures</a>
+    </div>
+
+    <form action="/test.html" method="post">
+        <h1 id="pg2Header" class="header">Which Squad Would You Be In?</h1>
+
+        <fieldset>
+
+            <div id="container">
+
+                <label for="name">Name</label>
+
+                <div id="nameSct">
+                    <input id="name" type="text" name="user_name">
+                </div>
+
+                <label for="email">Email</label>
+
+                <div id="emailSct">
+                    <input id="text" type="text" name="user_email">
+                </div>
+
+                <label for="status">Have you seen Black Clover?</label>
+
+                <div id="fanStatus">
+                    <select id="status" name="user_status">
+                        <option value="none">I haven't seen Black Clover</option>
+                        <option value="some">I have watched a a few episodes</option>
+                        <option value="most">I'm almost caught up!</option>
+                        <option value="all">I'm caught up!</option>
+                    </select>
+                </div>
+
+                <label for="squad">Squad Choice</label>
+
+                <div id="squadChoice">
+                    <select id="squad" name="user_quad">
+                        <option value="">-Choose a squad-</option>
+                        <option value="deer">Aqua Deer</option>
+                        <option value="bulls">Black Bulls</option>
+                        <option value="rose">Blue Rose</option>
+                        <option value="peacocks">Coral Peacocks</option>
+                        <option value="lion">Crimson Lion Kings</option>
+                        <option value="dawn">Golden Dawn</option>
+                        <option value="mantis">Green Mantis</option>
+                        <option value="orcas">Purple Orcas</option>
+                        <option value="eagles">Silver Eagles</option>
+                    </select>
+                </div>
+
+                <div id="checkbox">
+                   <input type="checkbox" id="nextSeason" name="next_season">
+                </div>
+        
+                <label for="nextSeason">Are you ready for the next season?</label>
+
+                <label for="comments">Comments:</label>
+
+                <div id="textInput">
+                    <textarea id="comments" name="user_comments"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
